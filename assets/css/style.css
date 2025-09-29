@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: #000; /* black */
+  color: #fff; /* white text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.quiz-container {
+  background: #111; 
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* gold glow */
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: gold;
+  margin-bottom: 1.5rem;
+}
+
+.question {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.answers label {
+  display: block;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 2px solid gold;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/*Changes to purple to make clear which item is selected*/
+.answers label:hover {
+  background: rgb(204, 0, 255);
+  color: black;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: gold;
+  border: none;
+  border-radius: 6px;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*Changes to purple to make clear which item is selected*/
+button:hover {
+  background: rgb(143, 6, 211);
+  color: black;
+}
+
+#results {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: gold;
+  font-weight: bold;
+}
